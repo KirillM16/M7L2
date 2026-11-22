@@ -10,6 +10,12 @@ def test_calculate_division():
 def test_calculate_unknown_operation():
     assert calculate(5, 5, 'unknown') == "Неизвестная операция."
 
+def test_calculate_umnoz():
+    assert calculate(8, 2, '*') == 16
+
+def test_calculate_nanol():
+    assert calculate(8, 0, '/') == "Ошибка: Деление на ноль."
+
 '''
 Задача. В настоящий момент реализовано три unit-теста
 Проверяется корректность работы калькулятора для действий сложения, деления и неизвестной операции
